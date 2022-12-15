@@ -1,4 +1,4 @@
-import { ButtonStyleT } from "@/model/types";
+import { ButtonStyleT } from "src/model/types";
 import { FC } from "react";
 import arrow from "src/assets/shared/icon-arrow-right.svg";
 import "src/scss/components/_button.scss";

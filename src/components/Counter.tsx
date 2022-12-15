@@ -1,7 +1,7 @@
+import { OperationT } from "src/model/types";
 import { FC } from "react";
 import "src/scss/components/_counter.scss";
 
-export type OperationT = "+" | "-";
 export type CounterT = {
   count: number;
   onClick: (operation: OperationT) => () => void;

@@ -1,28 +1,20 @@
-import { INPUT_TYPES } from "src/model/enums";
-import { InputTypeT } from "src/model/types";
-import { FC, LegacyRef, RefObject, useRef } from "react";
+import { FC } from "react";
+import useInputLogic from "src/hooks/useInputLogic";
+import { InputT } from "src/model/types";
 import "src/scss/components/_input.scss";
 
-export type InputT = {
-  title: string;
-  type: InputTypeT;
-  errorMessage?: string;
-  onClick: () => void;
-};
 //TO DO: refactoring
-const Input: FC<InputT> = ({ title, type, errorMessage, onClick }) => {
-  const ref = useRef() as RefObject<HTMLInputElement>;
-  const isError = !!errorMessage;
-  const isErrorPrefix = isError && "--error";
-  const mainClassName = `input input${isErrorPrefix}`;
-  const htmlClassName = `${mainClassName}__html input__html--${type}`;
-  const placeholder = `Enter youre ${title}`;
-  const isTextInput = type === INPUT_TYPES.TEXT;
-  const isRadio = !isTextInput;
-  const handleClick = () => {
-    onClick();
-    isTextInput && ref.current?.focus();
-  };
+const Input: FC<InputT> = ({ title, errorMessage, type, onClick }) => {
+  const {
+    mainClassName,
+    handleClick,
+    isTextInput,
+    isError,
+    htmlClassName,
+    placeholder,
+    isRadio,
+    ref,
+  } = useInputLogic({ title, errorMessage, type, onClick });
   return (
     <div className={mainClassName} onClick={handleClick}>
       <div className={`${mainClassName}__text`}>
