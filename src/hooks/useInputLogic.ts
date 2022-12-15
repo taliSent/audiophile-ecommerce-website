@@ -14,6 +14,7 @@ const useInputLogic = ({ title, type, errorMessage, onClick }: InputT) => {
     onClick();
     isTextInput && ref.current?.focus();
   };
+
   return {
     ref,
     isError,
