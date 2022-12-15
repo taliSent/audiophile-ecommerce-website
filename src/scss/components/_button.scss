@@ -1,0 +1,39 @@
+@use "src/scss/abstracts/color";
+@use "src/scss/abstracts/fonts/letter-spacing";
+
+.button {
+    padding: 1em 2em;
+    letter-spacing: letter-spacing.$subtitle;
+    &__primary {
+        color: color.$white;
+        background-color: color.$dark-orange;
+        border: none;
+        &:hover {
+            background-color: color.$light-orange;
+        }
+    }
+
+    &__secondary {
+        color: color.$black;
+        background-color: color.$white;
+        border: solid 1px color.$black;
+        &:hover {
+            color: color.$white;
+            background-color: color.$black;
+        }
+    }
+
+    &__thirdly {
+        color: rgba(color.$black, 0.5);
+        background-color: transparent;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.3em;
+
+        &:hover {
+            color: color.$dark-orange;
+        }
+    }
+}

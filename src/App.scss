@@ -1,0 +1,21 @@
+@use "scss/abstracts/fonts/font-size";
+@use "scss/abstracts/fonts/font-family";
+@use "scss/abstracts/color";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+
+.App {
+  font-family: font-family.$default;
+  font-size: font-size.$default;
+  background-color: color.$white;
+}
