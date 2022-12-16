@@ -1,0 +1,36 @@
+@use "./abstracts/fonts/font-size";
+@use "./abstracts/fonts/font-family";
+@use "./abstracts/color";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  font-family: font-family.$default;
+  font-size: font-size.$default;
+  background-color: color.$white;
+}

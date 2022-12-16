@@ -1,0 +1,18 @@
+@use "src/scss/abstracts/color";
+@use "src/scss/abstracts/fonts/letter-spacing";
+@use "src/scss/abstracts/fonts/font-size";
+
+.header {
+    width: 100%;
+    padding: 2em 12.69em;
+    background-color: color.$black;
+    color: color.$white;
+    font-size: font-size.$subtitle;
+    display: flex;
+    justify-content: space-between;
+    &__links {
+        width: 33%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
