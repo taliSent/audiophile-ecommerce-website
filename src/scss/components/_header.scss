@@ -1,6 +1,7 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
+@use "./../mixins/icon" as *;
 
 .header {
     width: 100%;
@@ -12,10 +13,13 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        &__icon {
+            @include icon("cart");
+        }
         &:after {
             content: "";
             position: absolute;
-            border-bottom: 1px solid #979797;
+            border-bottom: 1px solid grey;
             height: calc(100% + 2em);
             width: 100%;
         }

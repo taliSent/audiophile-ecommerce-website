@@ -1,5 +1,4 @@
 import { FC } from "react";
-import iconCart from "src/assets/shared/header/icon-cart.svg";
 import Navbar from "./Navbar";
 import "src/scss/components/_header.scss";
 
@@ -8,7 +7,7 @@ const Header: FC = () => {
     <div className='header'>
       <div className='header__content'>
         <Navbar variant='header' />
-        <img src={iconCart} alt='icon-cart' />
+        <div className='header__content__icon--cart'></div>
       </div>
     </div>
   );

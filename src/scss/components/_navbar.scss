@@ -1,3 +1,5 @@
+@use "src/scss/abstracts/color";
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -6,6 +8,9 @@
         z-index: 10;
         display: flex;
         gap: 1em;
+        & a:hover {
+            color: color.$dark-orange;
+        }
         &--header {
             width: 30%;
         }

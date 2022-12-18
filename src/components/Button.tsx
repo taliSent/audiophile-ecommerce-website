@@ -10,10 +10,13 @@ export type ButtonT = {
 };
 
 const Button: FC<ButtonT> = ({ title, variant, onClick }) => {
-  const className = `button button__${variant}`;
   const needArrow = variant === "thirdly";
   return (
-    <button type='button' className={className} onClick={onClick}>
+    <button
+      type='button'
+      className={`button button__${variant}`}
+      onClick={onClick}
+    >
       {needArrow ? (
         <>
           {title}

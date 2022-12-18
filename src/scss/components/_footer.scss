@@ -1,6 +1,7 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
+@use "./../mixins/icon" as *;
 
 .footer {
     width: 100%;
@@ -8,6 +9,34 @@
     background-color: color.$black;
     color: color.$white;
     font-size: font-size.$subtitle;
-    // display: flex;
-    // justify-content: space-between;
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        height: 1px;
+        width: 100px;
+        background-color: color.$dark-orange;
+        top: 0;
+    }
+    &__content {
+        margin-top: 2.4em;
+        display: grid;
+        grid-template-columns: auto auto;
+        &__text {
+            width: 50%;
+            color: grey;
+        }
+        &__social {
+            display: flex;
+            gap: 1em;
+            align-self: flex-end;
+            @include icon("facebook");
+            @include icon("twitter");
+            @include icon("instagram");
+        }
+    }
+    &__copyright {
+        margin-top: 2em;
+        color: grey;
+    }
 }
