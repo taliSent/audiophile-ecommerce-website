@@ -2,7 +2,7 @@ import { FC } from "react";
 import { FOOTER_TEXT } from "src/constants";
 import iconFacebook from "src/assets/shared/button/icon-facebook.svg";
 import "src/scss/components/_footer.scss";
-import Navbar from "../Navbar";
+import Navbar from "./Navbar";
 
 const Footer: FC = () => {
   return (

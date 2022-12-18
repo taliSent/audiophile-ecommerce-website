@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Footer from "src/components/Footer/Footer";
+import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 
 const HomePage: FC = () => {
