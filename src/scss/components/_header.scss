@@ -8,11 +8,16 @@
     background-color: color.$black;
     color: color.$white;
     font-size: font-size.$subtitle;
-    display: flex;
-    justify-content: space-between;
-    &__links {
-        width: 33%;
+    &__content {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            border-bottom: 1px solid #979797;
+            height: calc(100% + 2em);
+            width: 100%;
+        }
     }
 }

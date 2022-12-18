@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__links {
+        z-index: 10;
+        display: flex;
+        gap: 1em;
+        &--header {
+            width: 30%;
+        }
+        &--footer {
+        }
+    }
+}
