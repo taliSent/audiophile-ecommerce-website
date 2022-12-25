@@ -1,0 +1,12 @@
+@mixin main_padding {
+    padding-left: 12.69em;
+    padding-right: 12.69em;
+    @media screen and (max-width: 870px) {
+        padding-left: 2.1em;
+        padding-right: 2.1em;
+    }
+    @media screen and (max-width: 375px) {
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+    }
+}

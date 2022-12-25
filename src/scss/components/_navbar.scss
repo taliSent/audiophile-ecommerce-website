@@ -3,18 +3,21 @@
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
     &__links {
         z-index: 10;
         display: flex;
-        gap: 1em;
+        gap: 2.2em;
+        @media screen and (max-width: 350px) {
+            justify-content: center;
+        }
         & a:hover {
             color: color.$dark-orange;
         }
         &--header {
-            width: 30%;
-        }
-        &--footer {
+            margin: auto;
         }
     }
 }
