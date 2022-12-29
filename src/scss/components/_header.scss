@@ -17,12 +17,12 @@
         justify-content: space-between;
         position: relative;
         &__logo {
-            @media screen and (min-width: 375px) and (max-width: 870px) {
+            @media screen and (min-width: 375px) and (max-width: 1440px) {
                 margin-left: 3em;
             }
             @media screen and (max-width: 375px) {
                 //fix this
-                margin: 0 35%;
+                margin-inline: auto;
             }
         }
         &__icon {

@@ -10,14 +10,23 @@
         z-index: 10;
         display: flex;
         gap: 2.2em;
-        @media screen and (max-width: 350px) {
-            justify-content: center;
-        }
+
         & a:hover {
             color: color.$dark-orange;
         }
         &--header {
             margin: auto;
+
+            &--open {
+                @media screen and (max-width: 1440px) {
+                    flex-direction: column;
+                    height: 100vh;
+                    justify-content: center;
+                }
+            }
+            &--closed {
+                margin: auto;
+            }
         }
     }
 }
