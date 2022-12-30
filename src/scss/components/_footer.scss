@@ -25,21 +25,37 @@
         margin-top: 2.4em;
         display: grid;
         grid-template-columns: auto auto;
+        @media screen and (max-width: 414px) {
+            grid-template-columns: auto;
+        }
         &__text {
             width: 50%;
             color: grey;
+            @media screen and (max-width: 414px) {
+                margin-inline: auto;
+                text-align: center;
+            }
         }
         &__social {
             display: flex;
             gap: 1em;
             align-self: flex-end;
+            margin-left: auto;
+            margin-right: 0;
             @include icon("facebook");
             @include icon("twitter");
             @include icon("instagram");
+            @media screen and (max-width: 414px) {
+                margin: 2em auto;
+                text-align: center;
+            }
         }
     }
     &__copyright {
         margin-top: 2em;
         color: grey;
+        @media screen and (max-width: 414px) {
+            text-align: center;
+        }
     }
 }

@@ -4,30 +4,34 @@ import { Link } from "react-router-dom";
 import logo from "src/assets/shared/logo.svg";
 import { motion } from "framer-motion";
 import "src/scss/components/_navbar.scss";
+import { LINKS } from "src/constants";
 
 type NavbarT = {
   variant: "header" | "footer";
-  isMenuOpen: boolean;
+  isMenuOpen?: boolean;
 };
 
 const Navbar: FC<NavbarT> = ({ variant, isMenuOpen }: NavbarT) => {
+  const menuState = isMenuOpen ? "open" : "closed";
+  const needLogo = variant === "footer" ? true : isDesktop;
   return (
-    <div className='navbar'>
+    <div className={`navbar navbar--${variant}`}>
       {/* <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
       /> */}
-      {isDesktop && <img src={logo} alt='logo' />}
+      {needLogo && (
+        <img src={logo} alt='logo' className={`navbar__logo--${variant}`} />
+      )}
       <div
-        className={`navbar__links navbar__links--${variant}--${
-          isMenuOpen ? "open" : "closed"
-        }`}
+        className={`navbar__links navbar__links--${variant} navbar__links--${variant}--${menuState}`}
       >
-        <Link to='/'>HOME</Link>
-        <Link to='/headphones'>HEADPHONES</Link>
-        <Link to='/speaker'>SPEAKERS</Link>
-        <Link to='/earphones'>EARPHONES</Link>
+        {LINKS.map(({ to, name }) => (
+          <Link to={to} key={to}>
+            {name}
+          </Link>
+        ))}
       </div>
     </div>
   );

@@ -1,15 +1,43 @@
 @use "src/scss/abstracts/color";
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 100%;
+
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &--footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        @media screen and (max-width: 1440px) {
+            grid-template-columns: auto;
+            gap: 1em;
+        }
+        @media screen and (max-width: 414px) {
+            gap: 2.2em;
+        }
+    }
 
     &__links {
         z-index: 10;
         display: flex;
         gap: 2.2em;
+
+        &--footer {
+            margin-right: 0;
+            margin-left: auto;
+            @media screen and (min-width: 414px) and (max-width: 1280px) {
+                margin-left: 0;
+                margin-right: auto;
+            }
+            @media screen and (max-width: 414px) {
+                display: grid;
+                margin-inline: auto;
+                text-align: center;
+            }
+        }
 
         & a:hover {
             color: color.$dark-orange;
@@ -22,11 +50,17 @@
                     flex-direction: column;
                     height: 100vh;
                     justify-content: center;
+                    margin: auto;
                 }
             }
             &--closed {
                 margin: auto;
             }
+        }
+    }
+    &__logo--footer {
+        @media screen and (max-width: 414px) {
+            margin-inline: auto;
         }
     }
 }
