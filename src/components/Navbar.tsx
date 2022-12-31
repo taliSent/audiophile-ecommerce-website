@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { isDesktop } from "react-device-detect";
+import { isDesktop, isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import logo from "src/assets/shared/logo.svg";
 import { motion } from "framer-motion";
