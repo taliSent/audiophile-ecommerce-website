@@ -14,7 +14,7 @@
     padding-bottom: 2.1em;
     &__content {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto max-content;
         position: relative;
         &__logo {
             @media screen and (min-width: 414px) and (max-width: 1440px) {
@@ -28,14 +28,6 @@
         &__icon {
             @include icon("cart");
             @include icon("hamburger");
-            &--cart {
-                @media screen and (max-width: 1440px) {
-                    margin-left: auto;
-                    margin-right: 0;
-                    display: block;
-                }
-            }
-
             &--hamburger {
                 position: absolute;
             }
