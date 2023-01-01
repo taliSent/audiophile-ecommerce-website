@@ -17,10 +17,10 @@
         grid-template-columns: auto max-content;
         position: relative;
         &__logo {
-            @media screen and (min-width: 414px) and (max-width: 1440px) {
+            @media (414px <= width <= 1440px) {
                 margin-left: 3em;
             }
-            @media screen and (max-width: 414px) {
+            @media (width <= 414px) {
                 //fix this
                 margin-inline: auto;
             }

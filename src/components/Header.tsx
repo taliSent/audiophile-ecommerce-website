@@ -1,5 +1,5 @@
 import { FC, useState } from "react";
-import { isMobile } from "react-device-detect";
+import { isDesktop, isMobile } from "react-device-detect";
 import logo from "src/assets/shared/logo.svg";
 import "src/scss/components/_header.scss";
 import Navbar from "./Navbar";
@@ -13,7 +13,7 @@ const Header: FC = () => {
   return (
     <div className='header'>
       <div className='header__content'>
-        {isMobile ? (
+        {!isDesktop ? (
           <>
             <div
               className='header__content__icon--hamburger'
