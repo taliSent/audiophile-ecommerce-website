@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
-import { isDesktop, isMobile } from "react-device-detect";
+import { isDesktop } from "react-device-detect";
 import logo from "src/assets/shared/logo.svg";
-import "src/scss/components/_header.scss";
 import Navbar from "./Navbar";
+import "src/scss/components/_header.scss";
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

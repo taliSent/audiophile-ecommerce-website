@@ -17,7 +17,7 @@
         grid-template-columns: auto max-content;
         position: relative;
         &__logo {
-            @media (414px <= width <= 1440px) {
+            @media (414px <= width <= 1280px) {
                 margin-left: 3em;
             }
             @media (width <= 414px) {
