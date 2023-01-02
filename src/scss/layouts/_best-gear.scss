@@ -1,30 +1,34 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
-// @use "./../mixins/icon" as *;
 @use "./../mixins/main_padding" as *;
 
 .best-gear {
     @include main_padding;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(540px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
     gap: 125px;
     grid-template-areas: "1 2";
-
-    @media (width <= 1280px) {
+    @media (width < 1025px) {
         grid-template-columns: auto;
         column-gap: normal;
         grid-row-gap: 40px;
     }
     &__text {
-        @media (width <= 1280px) {
+        display: grid;
+        align-content: center;
+        max-width: 440px;
+        @media (width <= 1025px) {
             grid-area: 2;
+            max-width: 100%;
+            text-align: center;
         }
         &__headline {
             font-size: font-size.$H2;
             font-weight: bold;
             margin-bottom: 32px;
-            @media (width <= 1280px) {
+            @media (width <= 1025px) {
                 font-size: font-size.$H5;
             }
             &__highlight {
@@ -37,7 +41,7 @@
         }
     }
     img {
-        @media (width <= 1280px) {
+        @media (width <= 1025px) {
             grid-area: 1;
         }
         max-width: 100%;

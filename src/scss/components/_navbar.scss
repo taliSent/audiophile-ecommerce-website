@@ -11,7 +11,7 @@
     &--footer {
         display: grid;
         grid-template-columns: auto auto;
-        @media (width <= 1280px) {
+        @media (width <= 1025px) {
             grid-template-columns: auto;
             gap: 1em;
         }
@@ -28,7 +28,7 @@
         &--footer {
             margin-right: 0;
             margin-left: auto;
-            @media (414px <= width <= 1280px) {
+            @media (414px <= width <= 1025px) {
                 margin-right: auto;
                 margin-left: 0;
             }
@@ -48,7 +48,7 @@
             margin: auto;
 
             &--open {
-                @media (width <= 1280px) {
+                @media (width <= 1025px) {
                     flex-direction: column;
                     height: 100vh;
                     justify-content: center;
