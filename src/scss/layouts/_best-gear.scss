@@ -7,7 +7,6 @@
     @include main_padding;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-template-columns: repeat(auto-fill, minmax(540px, 1fr));
     gap: 125px;
     grid-template-areas: "1 2";
     @media (width < 1025px) {

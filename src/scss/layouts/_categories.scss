@@ -1,0 +1,11 @@
+@use "./../mixins/main_padding" as *;
+
+.categories {
+    @include main_padding;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    @media (width > 414px) {
+        grid-auto-flow: column;
+    }
+}

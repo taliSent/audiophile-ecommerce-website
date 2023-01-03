@@ -1,0 +1,17 @@
+@use "./../mixins/main_padding" as *;
+
+.category {
+    &__img {
+        height: 160px;
+        position: relative;
+        z-index: 10;
+        &:after {
+            content: "";
+            position: absolute;
+            height: 204px;
+            width: 350px;
+            border-radius: 8px;
+            background-color: lightgrey;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 .page {
     display: grid;
-    grid-row-gap: 2em;
+    grid-row-gap: 160px;
     @media (414px <= width <= 1025px) {
         margin-left: 3em;
     }

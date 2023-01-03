@@ -1,7 +1,7 @@
 import { FC } from "react";
-import bestGearDesktop from "src/assets/desktop/image-best-gear.jpg";
-import bestGearTablet from "src/assets/tablet/image-best-gear.jpg";
-import bestGearMobile from "src/assets/mobile/image-best-gear.jpg";
+import bestGearDesktop from "src/assets/home/desktop/image-best-gear.jpg";
+import bestGearTablet from "src/assets/home/tablet/image-best-gear.jpg";
+import bestGearMobile from "src/assets/home/mobile/image-best-gear.jpg";
 import { isDesktop, isMobile, isTablet } from "react-device-detect";
 import "src/scss/layouts/_best-gear.scss";
 
