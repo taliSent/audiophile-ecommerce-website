@@ -4,8 +4,13 @@
     @include main_padding;
     display: grid;
     gap: 30px;
+    grid-auto-flow: column;
     text-align: center;
-    @media (width > 414px) {
-        grid-auto-flow: column;
+    @media (width <= 414px) {
+        grid-auto-flow: row;
+        gap: 132px;
     }
+    // @media (width < 1025px) {
+    //     gap: 132px;
+    // }
 }

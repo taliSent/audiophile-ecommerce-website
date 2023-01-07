@@ -20,5 +20,5 @@ export enum LINK_HREF {
   HOME = "/",
   HEADPHONES = "/headphones",
   SPEAKERS = "/speakers",
-  EARPHONES = "/speakers",
+  EARPHONES = "/earphones",
 }

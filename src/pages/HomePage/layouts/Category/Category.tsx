@@ -14,7 +14,7 @@ const Category: FC<CategoryT> = ({ title, href, image }: CategoryT) => {
     <div className='category'>
       {image}
       <div className='category__title'>{title}</div>
-      {/* <div className='category__background'></div> */}
+      {/* <div className='category__background' /> */}
       <Button
         title='SHOP'
         variant={BUTTON_STYLES.THIRDLY}
