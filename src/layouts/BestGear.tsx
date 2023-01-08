@@ -1,23 +1,11 @@
 import { FC } from "react";
-import bestGearDesktop from "src/assets/home/desktop/image-best-gear.jpg";
-import bestGearTablet from "src/assets/home/tablet/image-best-gear.jpg";
-import bestGearMobile from "src/assets/home/mobile/image-best-gear.jpg";
-import { isDesktop, isMobile, isTablet } from "react-device-detect";
+import imgDesktop from "src/assets/home/desktop/image-best-gear.jpg";
+import imgTablet from "src/assets/home/tablet/image-best-gear.jpg";
+import imgMobile from "src/assets/home/mobile/image-best-gear.jpg";
+import { pickSrc } from "src/utils/utils";
 import "src/scss/layouts/_best-gear.scss";
 
 const BestGear: FC = () => {
-  const pickSrc = () => {
-    switch (true) {
-      case isDesktop:
-        return bestGearDesktop;
-      case isTablet:
-        return bestGearTablet;
-      case isMobile:
-        return bestGearMobile;
-      default:
-        return bestGearTablet;
-    }
-  };
   return (
     <div className='best-gear'>
       <div className='best-gear__text'>
@@ -35,7 +23,7 @@ const BestGear: FC = () => {
           best place to buy your portable audio equipment.
         </div>
       </div>
-      <img alt='best-gear' src={pickSrc()} />
+      <img alt='best-gear' src={pickSrc(imgDesktop, imgTablet, imgMobile)} />
     </div>
   );
 };

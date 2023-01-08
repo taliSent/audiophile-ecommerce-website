@@ -3,6 +3,7 @@ import { FC } from "react";
 import arrow from "src/assets/shared/button/icon-arrow-right.svg";
 import { Link } from "react-router-dom";
 import "src/scss/components/_button.scss";
+import { BUTTON_STYLES } from "src/model/enums";
 
 export type ButtonT = {
   title: string;
@@ -17,7 +18,7 @@ const Button: FC<ButtonT> = ({
   onClick = () => {},
   href = "",
 }) => {
-  const needArrow = variant === "thirdly";
+  const needArrow = variant === BUTTON_STYLES.FOURTHLY;
   return (
     <Link to={href}>
       <button

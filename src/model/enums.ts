@@ -2,6 +2,7 @@ export enum BUTTON_STYLES {
   PRIMARY = "primary",
   SECONDARY = "secondary",
   THIRDLY = "thirdly",
+  FOURTHLY = "fourthly",
 }
 
 export enum INPUT_TYPES {

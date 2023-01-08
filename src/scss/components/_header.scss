@@ -5,11 +5,11 @@
 @use "./../mixins/main_padding" as *;
 
 .header {
+    @include main_padding;
     width: 100vw;
     background-color: color.$black;
     color: color.$white;
     font-size: font-size.$subtitle;
-    @include main_padding;
     padding-top: 2.1em;
     padding-bottom: 2.1em;
     &__content {

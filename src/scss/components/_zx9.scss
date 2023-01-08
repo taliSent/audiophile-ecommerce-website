@@ -1,0 +1,57 @@
+@use "src/scss/abstracts/color";
+@use "src/scss/abstracts/fonts/font-size";
+@use "./../mixins/main_padding" as *;
+
+.zx9 {
+    background-color: white;
+    &__plate {
+        position: relative;
+        width: 100%;
+        background-color: color.$dark-orange;
+        display: flex;
+        gap: 138px;
+        padding: 96px 95px 0 117px;
+        z-index: 0;
+        @media (414px <= width <= 1040px) {
+            flex-wrap: wrap;
+            padding: 52px 0 64px 0;
+            gap: 64px;
+            justify-content: center;
+        }
+        &__img {
+            width: 410px;
+            z-index: 1;
+            // aspect-ratio: 410 / 493;
+            @media (414px <= width <= 1040px) {
+                width: 197px;
+            }
+            @media (414px > width) {
+                width: 172px;
+            }
+        }
+        &__circles {
+            content: "";
+            position: absolute;
+            max-height: 100%;
+            max-width: 100%;
+            z-index: -1;
+        }
+        &__text {
+            align-self: center;
+            @media (414px <= width <= 1040px) {
+                text-align: center;
+            }
+
+            &__description {
+                font-size: font-size.$subtitle;
+                margin-top: 18px;
+                margin-bottom: 46px;
+                opacity: 75%;
+                color: white;
+            }
+            &__button {
+                margin-bottom: 46px;
+            }
+        }
+    }
+}

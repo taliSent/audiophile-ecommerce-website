@@ -1,7 +1,6 @@
 @use "./../mixins/main_padding" as *;
 
 .categories {
-    @include main_padding;
     display: grid;
     gap: 30px;
     grid-auto-flow: column;

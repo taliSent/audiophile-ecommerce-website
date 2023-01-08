@@ -17,7 +17,7 @@ const Category: FC<CategoryT> = ({ title, href, image }: CategoryT) => {
       {/* <div className='category__background' /> */}
       <Button
         title='SHOP'
-        variant={BUTTON_STYLES.THIRDLY}
+        variant={BUTTON_STYLES.FOURTHLY}
         onClick={() => {}}
         href={href}
       />

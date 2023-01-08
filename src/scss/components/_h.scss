@@ -1,0 +1,14 @@
+@use "src/scss/abstracts/color";
+@use "src/scss/abstracts/fonts/letter-spacing";
+@use "src/scss/abstracts/fonts/font-size";
+
+.h1 {
+    font-size: font-size.$H1;
+    font-weight: bold;
+    &__white {
+        color: white;
+    }
+    @media (width <= 1025px) {
+        font-size: font-size.$H3;
+    }
+}

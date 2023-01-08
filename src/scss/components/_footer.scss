@@ -5,8 +5,8 @@
 @use "./../mixins/main_padding" as *;
 
 .footer {
-    width: 100%;
     @include main_padding;
+    width: 100vw;
     padding-top: 4.3em;
     padding-bottom: 3.2em;
     background-color: color.$black;

@@ -1,4 +1,4 @@
-@use "./../mixins/main_padding" as *;
+// @use "./../mixins/main_padding" as *;
 @use "src/scss/abstracts/color";
 
 .category {
@@ -11,12 +11,11 @@
         position: absolute;
         height: 204px;
         // width: clamp(70%, 13em, 350px);
-
         @media (width <= 414px) {
-            width: 90%;
+            width: 20em;
         }
         @media (414px < width <= 1440px) {
-            width: 16em;
+            width: 21vw;
         }
         @media (width > 1440px) {
             width: 340px;
@@ -24,7 +23,7 @@
         // width: clamp(327px, 223px, 350px);
         border-radius: 8px;
         background-color: color.$light-grey;
-        transform: translate(-65%, -50%);
+        transform: translate(-70%, -50%);
         z-index: -1;
     }
 }

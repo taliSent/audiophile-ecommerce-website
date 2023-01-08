@@ -24,6 +24,17 @@
     }
 
     &__thirdly {
+        color: color.$white;
+        background-color: color.$black;
+        border: none;
+        &:hover {
+            color: color.$white;
+            background-color: #4c4c4c;
+            border: none;
+        }
+    }
+
+    &__fourthly {
         color: rgba(color.$black, 0.5);
         background-color: transparent;
         border: none;

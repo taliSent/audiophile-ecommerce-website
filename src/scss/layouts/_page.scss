@@ -1,7 +1,9 @@
+@use "./../mixins/main_padding" as *;
+
 .page {
+    @include main_padding;
     display: grid;
     grid-row-gap: 160px;
-    // @media (414px <= width <= 1025px) {
-    //     // margin-left: 3em;
-    // }
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
