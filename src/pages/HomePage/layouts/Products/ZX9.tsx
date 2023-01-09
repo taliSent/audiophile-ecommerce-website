@@ -4,10 +4,10 @@ import XZ9desktop from "src/assets/home/desktop/image-speaker-zx9.png";
 import XZ9tablet from "src/assets/home/tablet/image-speaker-zx9.png";
 import XZ9mobile from "src/assets/home/mobile/image-speaker-zx9.png";
 import circles from "src/assets/home/desktop/pattern-circles.svg";
-import H1 from "src/components/H";
+import { H1 } from "src/components/H";
 import Button from "src/components/Button";
-import "src/scss/components/_zx9.scss";
 import { BUTTON_STYLES } from "src/model/enums";
+import "src/scss/components/_zx9.scss";
 
 type ZX9T = {};
 
@@ -27,7 +27,7 @@ const ZX9: FC<ZX9T> = () => {
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.
           </div>
-          <Button title='See Product' variant={BUTTON_STYLES.THIRDLY} />
+          <Button title='SEE PRODUCT' variant={BUTTON_STYLES.THIRDLY} />
         </div>
       </div>
     </div>

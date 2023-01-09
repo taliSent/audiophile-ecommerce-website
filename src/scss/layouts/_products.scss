@@ -1,0 +1,6 @@
+@use "./../mixins/main_padding" as *;
+
+.products {
+    display: grid;
+    gap: 48px;
+}

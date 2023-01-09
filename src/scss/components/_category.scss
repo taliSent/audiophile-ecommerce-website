@@ -1,4 +1,3 @@
-// @use "./../mixins/main_padding" as *;
 @use "src/scss/abstracts/color";
 
 .category {
@@ -12,7 +11,7 @@
         height: 204px;
         // width: clamp(70%, 13em, 350px);
         @media (width <= 414px) {
-            width: 20em;
+            width: 80%;
         }
         @media (414px < width <= 1440px) {
             width: 21vw;
