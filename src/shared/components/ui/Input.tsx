@@ -1,7 +1,7 @@
 import { FC } from "react";
 import useInputLogic from "src/shared/components/model/useInputLogic";
 import { InputT } from "src/shared/model/types";
-import "src/scss/components/_input.scss";
+import "src/scss/shared/_input.scss";
 
 //TO DO: refactoring
 const Input: FC<InputT> = ({ title, errorMessage, type, onClick }) => {

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import React, { Suspense } from "react";
 import { ScaleLoader } from "react-spinners";
-import "src/scss/components/_spinner.scss";
+import "src/scss/shared/_spinner.scss";
 
 const SPINNER_COLOR = "hsl(22, 65%, 57%)";
 

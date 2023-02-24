@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Button from "src/shared/components/ui/Button";
 import { BUTTON_STYLES } from "src/shared/model/enums";
-import "src/scss/components/_category.scss";
+import "src/scss/entities/_category.scss";
 
 type CategoryT = {
   title: string;
@@ -15,12 +15,7 @@ const Category: FC<CategoryT> = ({ title, href, image }: CategoryT) => {
       {image}
       <div className='category__title'>{title}</div>
       {/* <div className='category__background' /> */}
-      <Button
-        title='SHOP'
-        variant={BUTTON_STYLES.FOURTHLY}
-        onClick={() => {}}
-        href={href}
-      />
+      <Button title='SHOP' variant={BUTTON_STYLES.FOURTHLY} href={href} />
     </div>
   );
 };

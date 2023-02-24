@@ -12,7 +12,7 @@ const YX1: FC = () => {
   return (
     <div className='yx1'>
       <img
-        className='yx1__plate__img'
+        className='yx1__img'
         /* fix this */
         src={pickSrc(YX1desktop, YX1tablet, YX1mobile)}
         alt='yx1'

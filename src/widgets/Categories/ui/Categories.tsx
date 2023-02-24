@@ -4,7 +4,7 @@ import earphones from "src/shared/assets/shared/desktop/image-category-thumbnail
 import headphones from "src/shared/assets/shared/desktop/image-category-thumbnail-headphones.png";
 import speakers from "src/shared/assets/shared/desktop/image-category-thumbnail-speakers.png";
 import Category from "src/entities/Category/ui/Category";
-import "src/scss/layouts/_categories.scss";
+import "src/scss/widgets/_categories.scss";
 
 const CategoriesPreview: FC = () => {
   return (

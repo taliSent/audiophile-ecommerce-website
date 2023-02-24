@@ -2,7 +2,7 @@ import { ButtonStyleT } from "src/shared/model/types";
 import { FC } from "react";
 import arrow from "src/shared/assets/shared/button/icon-arrow-right.svg";
 import { Link } from "react-router-dom";
-import "src/scss/components/_button.scss";
+import "src/scss/shared/_button.scss";
 import { BUTTON_STYLES } from "src/shared/model/enums";
 
 export type ButtonT = {

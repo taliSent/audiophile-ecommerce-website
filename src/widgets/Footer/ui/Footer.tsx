@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { FOOTER_TEXT } from "src/shared/constants";
 import Navbar from "src/entities/Navbar/ui/Navbar";
-import "src/scss/components/_footer.scss";
+import { FOOTER_TEXT } from "../model/constants";
+import "src/scss/widgets/_footer.scss";
 
 const Footer: FC = () => {
   return (

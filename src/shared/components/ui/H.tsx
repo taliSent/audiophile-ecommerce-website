@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import "src/scss/components/_h.scss";
+import "src/scss/shared/_h.scss";
 
 type HT = {
   children: ReactNode;

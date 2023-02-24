@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "src/scss/components/_counter.scss";
+import "src/scss/shared/_counter.scss";
 
 export type OperationT = "+" | "-";
 export type CounterT = {

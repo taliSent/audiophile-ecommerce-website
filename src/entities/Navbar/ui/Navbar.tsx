@@ -3,7 +3,7 @@ import { isDesktop, isMobile } from "react-device-detect";
 import { Link } from "react-router-dom";
 import logo from "src/shared/assets/shared/logo.svg";
 import { motion } from "framer-motion";
-import "src/scss/components/_navbar.scss";
+import "src/scss/entities/_navbar.scss";
 import { LINKS } from "src/shared/constants";
 
 type NavbarT = {

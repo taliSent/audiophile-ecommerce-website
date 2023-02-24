@@ -3,7 +3,7 @@ import imgDesktop from "src/shared/assets/home/desktop/image-best-gear.jpg";
 import imgTablet from "src/shared/assets/home/tablet/image-best-gear.jpg";
 import imgMobile from "src/shared/assets/home/mobile/image-best-gear.jpg";
 import { pickSrc } from "src/shared/utils/utils";
-import "src/scss/layouts/_best-gear.scss";
+import "src/scss/widgets/_best-gear.scss";
 
 const BestGear: FC = () => {
   return (
