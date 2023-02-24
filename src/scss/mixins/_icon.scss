@@ -1,7 +1,7 @@
 @use "src/scss/abstracts/color";
 
 @mixin icon($name) {
-    $url: "src/assets/shared/icons/icon-#{$name}.svg";
+    $url: "src/shared/assets/shared/icons/icon-#{$name}.svg";
     &--#{$name} {
         width: 1.6em;
         height: 1.6em;

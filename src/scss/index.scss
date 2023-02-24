@@ -12,6 +12,9 @@
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 ul,
 li {
@@ -36,5 +39,4 @@ body {
   font-family: font-family.$default;
   font-size: font-size.$default;
   background-color: color.$white;
-  // padding: 0em 2em;
 }
