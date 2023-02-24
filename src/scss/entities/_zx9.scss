@@ -22,7 +22,6 @@
         &__img {
             width: 410px;
             z-index: 1;
-            // aspect-ratio: 410 / 493;
             @media (414px <= width <= 1040px) {
                 width: 197px;
             }

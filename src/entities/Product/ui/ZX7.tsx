@@ -19,7 +19,7 @@ const ZX7: FC = () => {
         <img
           className='zx7__plate__img'
           src={pickSrc(XZ7desktop, XZ7tablet, XZ7mobile)}
-          height='320'
+          // height='320'
           alt='zx9'
         />
       </div>

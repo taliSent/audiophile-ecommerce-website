@@ -6,15 +6,14 @@
     display: flex;
     justify-content: space-between;
     gap: 32px;
-    // width: 100%;
-    @media (800px >= width) {
+    @media (414px >= width) {
         flex-direction: column;
         gap: 24px;
     }
     &__img {
         border-radius: 8px;
         width: calc(50% - 16px);
-        @media (800px >= width) {
+        @media (414px >= width) {
             width: 100%;
         }
     }
@@ -23,8 +22,11 @@
         padding: 6em 9em;
         border-radius: 8px;
         background-color: color.$light-grey;
-        @media (width <= 800px) {
+        @media (width <= 414px) {
             width: 100%;
+            padding: 2.5em;
+        }
+        @media (800px >= width) {
             padding: 2.5em;
         }
         &__text {

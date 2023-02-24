@@ -8,7 +8,7 @@ const ProductsPreview: FC = () => {
   return (
     <div className='products'>
       <ZX9 />
-      {/* <ZX7 /> */}
+      <ZX7 />
       <YX1 />
     </div>
   );

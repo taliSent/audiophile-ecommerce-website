@@ -15,7 +15,8 @@ export type ButtonT = {
 const Button: FC<ButtonT> = ({
   title,
   variant,
-  onClick = () => {},
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
+  // onClick = () => {},
   href = "",
 }) => {
   const needArrow = variant === BUTTON_STYLES.FOURTHLY;
@@ -24,7 +25,7 @@ const Button: FC<ButtonT> = ({
       <button
         type='button'
         className={`button button__${variant}`}
-        onClick={onClick}
+        // onClick={onClick}
       >
         {needArrow ? (
           <>
