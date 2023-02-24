@@ -1,28 +1,24 @@
 @use "src/scss/abstracts/color";
 
 .category {
+    position: relative;
+
     &__img {
         height: 160px;
-        position: relative;
     }
     &::after {
         content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         position: absolute;
-        height: 204px;
-        // width: clamp(70%, 13em, 350px);
-        @media (width <= 414px) {
-            width: 80%;
-        }
-        @media (414px < width <= 1440px) {
-            width: 21vw;
-        }
         @media (width > 1440px) {
             width: 340px;
         }
-        // width: clamp(327px, 223px, 350px);
         border-radius: 8px;
         background-color: color.$light-grey;
-        transform: translate(-70%, -50%);
+        transform: translate(0, 25%);
         z-index: -1;
     }
 }
