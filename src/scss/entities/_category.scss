@@ -13,12 +13,13 @@
         left: 0;
         right: 0;
         position: absolute;
+        border-radius: 8px;
+        background-color: color.$light-grey;
+        margin-inline: auto;
+        transform: translate(0, 25%);
+        z-index: -1;
         @media (width > 1440px) {
             width: 340px;
         }
-        border-radius: 8px;
-        background-color: color.$light-grey;
-        transform: translate(0, 25%);
-        z-index: -1;
     }
 }

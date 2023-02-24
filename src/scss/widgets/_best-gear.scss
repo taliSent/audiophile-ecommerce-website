@@ -4,7 +4,6 @@
 @use "./../mixins/main_padding" as *;
 
 .best-gear {
-    // @include main_padding;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 125px;

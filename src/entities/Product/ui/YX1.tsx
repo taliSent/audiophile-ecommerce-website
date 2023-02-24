@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { pickSrc } from "src/shared/utils/utils";
-import YX1desktop from "src/shared/assets/home/desktop/image-gallery-2.jpg";
-import YX1tablet from "src/shared/assets/home/tablet/image-gallery-2.jpg";
-import YX1mobile from "src/shared/assets/home/mobile/image-gallery-2.jpg";
+import YX1desktop from "src/shared/assets/home/desktop/image-earphones-yx1.jpg";
+import YX1tablet from "src/shared/assets/home/tablet/image-earphones-yx1.jpg";
+import YX1mobile from "src/shared/assets/home/mobile/image-earphones-yx1.jpg";
 import Button from "src/shared/components/ui/Button";
 import { BUTTON_STYLES } from "src/shared/model/enums";
 import { H4 } from "src/shared/components/ui/H";

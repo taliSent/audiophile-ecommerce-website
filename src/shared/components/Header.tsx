@@ -11,7 +11,10 @@ const Header: FC = () => {
   };
 
   return (
-    <div className='header'>
+    <div
+      className={`header ${isMenuOpen ? "header--is-open" : ""}`}
+      data-isOpen={isMenuOpen}
+    >
       <div className='header__content'>
         {!isDesktop ? (
           <>

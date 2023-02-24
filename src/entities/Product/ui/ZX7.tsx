@@ -3,9 +3,9 @@ import { pickSrc } from "src/shared/utils/utils";
 import XZ7desktop from "src/shared/assets/home/desktop/image-speaker-zx7.jpg";
 import XZ7tablet from "src/shared/assets/home/tablet/image-speaker-zx7.jpg";
 import XZ7mobile from "src/shared/assets/home/mobile/image-speaker-zx7.jpg";
-import { H4 } from "src/shared/components/H";
 import Button from "src/shared/components/ui/Button";
 import { BUTTON_STYLES } from "src/shared/model/enums";
+import { H4 } from "src/shared/components/ui/H";
 import "src/scss/entities/_zx7.scss";
 
 const ZX7: FC = () => {

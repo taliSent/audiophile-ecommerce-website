@@ -12,6 +12,11 @@
     font-size: font-size.$subtitle;
     padding-top: 2.1em;
     padding-bottom: 2.1em;
+    &--is-open {
+        position: fixed;
+        z-index: 100;
+    }
+
     &__content {
         display: grid;
         grid-template-columns: auto max-content;
@@ -21,7 +26,7 @@
                 margin-left: 3em;
             }
             @media (width <= 414px) {
-                //fix this
+                //fix this?
                 margin-inline: auto;
             }
         }
