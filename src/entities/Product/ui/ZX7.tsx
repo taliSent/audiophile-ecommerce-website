@@ -13,7 +13,7 @@ const ZX7: FC = () => {
     <div className='zx7'>
       <div className='zx7__plate'>
         <div className='zx7__plate__text'>
-          <T size='H4' color='black' toUpperCase>
+          <T size='H4' color='black' isUpperCase>
             ZX7 Speaker
           </T>
           <Button title='SEE PRODUCT' variant={BUTTON_STYLES.SECONDARY} />

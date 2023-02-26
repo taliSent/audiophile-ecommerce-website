@@ -10,6 +10,12 @@
     &--black {
         color: black;
     }
+    &--orange {
+        color: color.$dark-orange;
+    }
+    &--inline {
+        display: inline;
+    }
     @media (width <= 1025px) {
         font-size: map.get(font-size.$all, H3);
     }
@@ -20,8 +26,6 @@
 .H3,
 .H4,
 .H5 {
-    // font-size: map.get(font-size.$all, &);
-    // letter-spacing: map.get(letter-spacing.$all, &);
     font-weight: bold;
 }
 

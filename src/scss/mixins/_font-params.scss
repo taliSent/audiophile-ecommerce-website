@@ -1,0 +1,24 @@
+@use "./../abstracts/fonts/font-size";
+@use "./../abstracts/fonts/letter-spacing";
+@use "./../abstracts/fonts/line-height";
+
+@mixin font-params {
+  @each $name, $size in font-size.$all {
+    .#{$name} {
+      font-size: $size;
+      @if ($name == "subtitle") {
+        font-weight: 500;
+      }
+    }
+  }
+  @each $name, $size in letter-spacing.$all {
+    .#{$name} {
+      letter-spacing: $size;
+    }
+  }
+  @each $name, $size in line-height.$all {
+    .#{$name} {
+      line-height: $size;
+    }
+  }
+}

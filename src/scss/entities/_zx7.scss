@@ -1,6 +1,6 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/font-size";
-@use "./../mixins/main_padding" as *;
+@use "./../mixins/main-padding" as *;
 
 .zx7 {
     background-color: white;
@@ -19,7 +19,7 @@
             right: 0;
             bottom: 0;
             left: 0;
-            padding: 3em 5em;
+            padding: 6em;
             @media (414px < width <= 1040px) {
                 padding: 4em 3em;
             }

@@ -1,6 +1,8 @@
 @use "./abstracts/fonts/font-size";
+@use "./abstracts/fonts/letter-spacing";
 @use "./abstracts/fonts/font-family";
 @use "./abstracts/color";
+@use "./mixins/font-params" as *;
 @use "sass:map";
 
 *,
@@ -37,13 +39,10 @@ a:active {
 
 body {
   height: 100vh;
+  font-weight: 400;
   font-family: font-family.$default;
   font-size: font-size.$default;
   background-color: color.$white;
 }
 
-@each $name, $size in font-size.$all {
-  .#{$name} {
-    font-size: $size;
-  }
-}
+@include font-params;

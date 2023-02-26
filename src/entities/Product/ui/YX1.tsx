@@ -19,7 +19,7 @@ const YX1: FC = () => {
       />
       <div className='yx1__plate'>
         <div className='yx1__plate__text'>
-          <T size='H4' color='black' toUpperCase>
+          <T size='H4' color='black' isUpperCase>
             YX1 EARPHONES
           </T>
           <Button title='SEE PRODUCT' variant={BUTTON_STYLES.SECONDARY} />

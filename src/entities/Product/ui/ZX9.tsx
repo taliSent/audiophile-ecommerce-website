@@ -20,7 +20,7 @@ const ZX9: FC = () => {
         />
         <img className='zx9__plate__circles' src={circles} alt='zx9' />
         <div className='zx9__plate__text'>
-          <T size='H1' color='white' toUpperCase>
+          <T size='H1' color='white' isUpperCase>
             ZX9 SPEAKER
           </T>
           <div className='zx9__plate__text__description'>

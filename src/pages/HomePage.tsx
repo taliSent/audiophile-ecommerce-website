@@ -12,7 +12,7 @@ const HomePage: FC = () => {
     <>
       <Header />
       <div className='page'>
-        {/* <NewProduct /> */}
+        <NewProduct />
         <CategoriesPreview />
         <ProductsPreview />
         <BestGear />

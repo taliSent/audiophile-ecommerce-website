@@ -11,15 +11,13 @@ const BestGear: FC = () => {
     <div className='best-gear'>
       <div className='best-gear__text'>
         <div className='best-gear__text__headline'>
-          <T size='H2' toUpperCase>
+          <T size='H2' isUpperCase isInline>
             Bringing you the
           </T>
-          <span className='best-gear__text__headline__highlight'>
-            <T size='H2' toUpperCase>
-              {` best`}
-            </T>
-          </span>
-          <T size='H2' toUpperCase>
+          <T size='H2' color='orange' isUpperCase isInline>
+            {` best`}
+          </T>
+          <T size='H2' isUpperCase isInline>
             {` audio gear`}
           </T>
         </div>

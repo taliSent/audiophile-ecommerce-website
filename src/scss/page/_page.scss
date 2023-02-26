@@ -1,8 +1,13 @@
-@use "./../mixins/main_padding" as *;
+@use "./../mixins/main-padding" as *;
 
 .page {
-    @include main_padding;
+    & > div:not(:first-child) {
+        @include main-padding;
+    }
     display: grid;
     grid-row-gap: 160px;
     padding-bottom: 200px;
+    @media (width < 1025px) {
+        padding-bottom: 120px;
+    }
 }

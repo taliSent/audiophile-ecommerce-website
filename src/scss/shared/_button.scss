@@ -1,9 +1,10 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/letter-spacing";
+@use "sass:map";
 
 .button {
     padding: 1em 2em;
-    letter-spacing: letter-spacing.$subtitle;
+    letter-spacing: map.get(letter-spacing.$all, subtitle);
     &__primary {
         color: color.$white;
         background-color: color.$dark-orange;

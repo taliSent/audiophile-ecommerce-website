@@ -3,21 +3,27 @@ import "src/scss/shared/_t.scss";
 
 type TType = {
   children: string;
-  size: "H1" | "H2" | "H3" | "H4" | "overline";
-  toUpperCase?: boolean;
-  color?: "white" | "black";
+  size: "H1" | "H2" | "H3" | "H4" | "overline" | "subtitle";
+  color?: "white" | "black" | "orange";
+  isUpperCase?: boolean;
+  isInline?: boolean;
 };
 
 const T: FC<TType> = ({
   children,
   size,
-  toUpperCase = false,
+  isUpperCase = false,
+  isInline = false,
   color = "black",
 }: TType) => {
   return (
-    <span className={`text ${size} ${size}--${color}`}>
-      {toUpperCase ? children.toUpperCase() : children}
-    </span>
+    <div
+      className={`text text--${color} text--${
+        isInline ? "inline" : ""
+      } ${size}`}
+    >
+      {isUpperCase ? children.toUpperCase() : children}
+    </div>
   );
 };
 

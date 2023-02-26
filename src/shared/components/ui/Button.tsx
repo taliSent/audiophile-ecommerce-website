@@ -4,6 +4,7 @@ import arrow from "src/shared/assets/shared/button/icon-arrow-right.svg";
 import { Link } from "react-router-dom";
 import "src/scss/shared/_button.scss";
 import { BUTTON_STYLES } from "src/shared/model/enums";
+import T from "./T";
 
 export type ButtonT = {
   title: string;

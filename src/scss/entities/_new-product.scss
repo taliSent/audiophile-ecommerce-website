@@ -1,8 +1,11 @@
+@use "./../mixins/main-padding" as *;
+
 .new-product {
     position: relative;
-    // &__img {
-
-    // }
+    background-color: #191919;
+    &__img {
+        max-width: 100%;
+    }
     &__text {
         position: absolute;
         content: "";
@@ -10,5 +13,11 @@
         bottom: 0;
         right: 0;
         left: 0;
+        @include main-padding;
+        padding-top: 7em;
+        padding-bottom: 12em;
+        display: grid;
+        gap: 24px;
+        width: 30%;
     }
 }
