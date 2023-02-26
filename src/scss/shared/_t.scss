@@ -1,10 +1,9 @@
 @use "src/scss/abstracts/color";
 @use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
+@use "sass:map";
 
-.h1 {
-    font-size: font-size.$H1;
-    font-weight: bold;
+.text {
     &--white {
         color: white;
     }
@@ -12,20 +11,22 @@
         color: black;
     }
     @media (width <= 1025px) {
-        font-size: font-size.$H3;
+        font-size: map.get(font-size.$all, H3);
     }
 }
 
-.h4 {
-    font-size: font-size.$H4;
+.H1,
+.H2,
+.H3,
+.H4,
+.H5 {
+    // font-size: map.get(font-size.$all, &);
+    // letter-spacing: map.get(letter-spacing.$all, &);
     font-weight: bold;
-    &--white {
-        color: white;
-    }
-    &--black {
-        color: black;
-    }
+}
+
+.H2 {
     @media (width <= 1025px) {
-        font-size: font-size.$H4;
+        font-size: map.get(font-size.$all, H5);
     }
 }

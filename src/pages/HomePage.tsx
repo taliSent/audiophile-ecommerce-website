@@ -4,6 +4,7 @@ import Footer from "src/widgets/Footer/ui/Footer";
 import Header from "src/shared/components/Header";
 import CategoriesPreview from "src/widgets/Categories/ui/Categories";
 import ProductsPreview from "src/widgets/ProductsPreview/ui/Products";
+import NewProduct from "src/entities/NewProduct/ui/NewProduct";
 import "src/scss/page/_page.scss";
 
 const HomePage: FC = () => {
@@ -11,6 +12,7 @@ const HomePage: FC = () => {
     <>
       <Header />
       <div className='page'>
+        {/* <NewProduct /> */}
         <CategoriesPreview />
         <ProductsPreview />
         <BestGear />

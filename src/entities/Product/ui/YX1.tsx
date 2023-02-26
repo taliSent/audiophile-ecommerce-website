@@ -5,7 +5,7 @@ import YX1tablet from "src/shared/assets/home/tablet/image-earphones-yx1.jpg";
 import YX1mobile from "src/shared/assets/home/mobile/image-earphones-yx1.jpg";
 import Button from "src/shared/components/ui/Button";
 import { BUTTON_STYLES } from "src/shared/model/enums";
-import { H4 } from "src/shared/components/ui/H";
+import T from "src/shared/components/ui/T";
 import "src/scss/entities/_yx1.scss";
 
 const YX1: FC = () => {
@@ -19,7 +19,9 @@ const YX1: FC = () => {
       />
       <div className='yx1__plate'>
         <div className='yx1__plate__text'>
-          <H4 color='black'>YX1 EARPHONES</H4>
+          <T size='H4' color='black' toUpperCase>
+            YX1 EARPHONES
+          </T>
           <Button title='SEE PRODUCT' variant={BUTTON_STYLES.SECONDARY} />
         </div>
       </div>

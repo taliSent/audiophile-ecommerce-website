@@ -1,10 +1,14 @@
 $default: 15px;
-$H1: 56px;
-$H2: 40px;
-$H3: 32px;
-$H4: 28px;
-$H5: 24px;
-$H6: 18px;
-$overline: 14px;
 $subtitle: 13px;
-$label: 12px;
+$all: (
+    default: 15px,
+    H1: 56px,
+    H2: 40px,
+    H3: 32px,
+    H4: 28px,
+    H5: 24px,
+    H6: 18px,
+    overline: 14px,
+    subtitle: 13px,
+    label: 12px,
+);

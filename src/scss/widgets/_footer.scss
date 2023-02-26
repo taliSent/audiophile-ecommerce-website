@@ -1,8 +1,8 @@
 @use "src/scss/abstracts/color";
-@use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
 @use "./../mixins/icon" as *;
 @use "./../mixins/main_padding" as *;
+@use "sass:map";
 
 .footer {
     @include main_padding;

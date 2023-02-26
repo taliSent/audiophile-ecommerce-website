@@ -1,7 +1,7 @@
 @use "src/scss/abstracts/color";
-@use "src/scss/abstracts/fonts/letter-spacing";
 @use "src/scss/abstracts/fonts/font-size";
 @use "./../mixins/main_padding" as *;
+@use "sass:map";
 
 .best-gear {
     display: grid;
@@ -23,18 +23,18 @@
             text-align: center;
         }
         &__headline {
-            font-size: font-size.$H2;
-            font-weight: bold;
+            // font-size: font-size.$H2;
+            // font-weight: bold;
             margin-bottom: 32px;
-            @media (width <= 1025px) {
-                font-size: font-size.$H5;
-            }
+            // @media (width <= 1025px) {
+            //     font-size: map.get(font-size.$all, H5);
+            // }
             &__highlight {
                 color: color.$dark-orange;
             }
         }
         &__description {
-            font-size: font-size.$overline;
+            font-size: map.get(font-size.$all, overline);
             opacity: 0.5;
         }
     }

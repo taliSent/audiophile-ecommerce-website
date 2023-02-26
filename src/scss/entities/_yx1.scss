@@ -24,9 +24,9 @@
         background-color: color.$light-grey;
         @media (width <= 414px) {
             width: 100%;
-            padding: 2.5em;
+            padding: 1em;
         }
-        @media (800px >= width) {
+        @media (800px >= width >= 414px) {
             padding: 2.5em;
         }
         &__text {

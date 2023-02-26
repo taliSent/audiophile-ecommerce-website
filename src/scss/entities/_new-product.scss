@@ -1,0 +1,14 @@
+.new-product {
+    position: relative;
+    // &__img {
+
+    // }
+    &__text {
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+}

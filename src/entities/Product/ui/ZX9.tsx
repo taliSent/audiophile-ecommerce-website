@@ -6,7 +6,7 @@ import XZ9mobile from "src/shared/assets/home/mobile/image-speaker-zx9.png";
 import circles from "src/shared/assets/home/desktop/pattern-circles.svg";
 import Button from "src/shared/components/ui/Button";
 import { BUTTON_STYLES } from "src/shared/model/enums";
-import { H1 } from "src/shared/components/ui/H";
+import T from "src/shared/components/ui/T";
 import "src/scss/entities/_zx9.scss";
 
 const ZX9: FC = () => {
@@ -20,7 +20,9 @@ const ZX9: FC = () => {
         />
         <img className='zx9__plate__circles' src={circles} alt='zx9' />
         <div className='zx9__plate__text'>
-          <H1 color='white'>ZX9 SPEAKER</H1>
+          <T size='H1' color='white' toUpperCase>
+            ZX9 SPEAKER
+          </T>
           <div className='zx9__plate__text__description'>
             Upgrade to premium speakers that are phenomenally built to deliver
             truly remarkable sound.

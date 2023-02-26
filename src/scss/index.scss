@@ -1,6 +1,7 @@
 @use "./abstracts/fonts/font-size";
 @use "./abstracts/fonts/font-family";
 @use "./abstracts/color";
+@use "sass:map";
 
 *,
 *:before,
@@ -39,4 +40,10 @@ body {
   font-family: font-family.$default;
   font-size: font-size.$default;
   background-color: color.$white;
+}
+
+@each $name, $size in font-size.$all {
+  .#{$name} {
+    font-size: $size;
+  }
 }
