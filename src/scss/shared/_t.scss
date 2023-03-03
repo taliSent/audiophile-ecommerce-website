@@ -16,9 +16,6 @@
     &--inline {
         display: inline;
     }
-    @media (width <= 1025px) {
-        font-size: map.get(font-size.$all, H3);
-    }
 }
 
 .H1,
@@ -27,6 +24,9 @@
 .H4,
 .H5 {
     font-weight: bold;
+    @media (width <= 1025px) {
+        font-size: map.get(font-size.$all, H3);
+    }
 }
 
 .H2 {

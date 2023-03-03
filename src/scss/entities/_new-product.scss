@@ -5,6 +5,12 @@
     background-color: #191919;
     &__img {
         max-width: 100%;
+        max-height: 100vh;
+        display: block;
+        margin: 0 auto;
+        @media (width <= 1024px) {
+            margin: 0 auto;
+        }
     }
     &__text {
         position: absolute;
@@ -19,5 +25,13 @@
         display: grid;
         gap: 24px;
         width: 30%;
+        @media (width <= 1024px) {
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        @media (width <= 414px) {
+            width: 100%;
+        }
     }
 }
